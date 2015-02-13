@@ -1,3 +1,5 @@
+import datetime
+print datetime.datetime.today()
 import json
 from urllib import urlopen
 url = "https://gdata.youtube.com/feeds/api/standardfeeds/top_rated?alt=json"
