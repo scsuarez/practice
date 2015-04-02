@@ -66,3 +66,4 @@ analysis = lapply(alldat, function(dat) {
 names(analysis) = allfiles
 
 #now, how do we run this as an integrated file?
+## source("~practice/Transcriptome Data/transcriptome search comparison.R")
