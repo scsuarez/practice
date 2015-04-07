@@ -27,6 +27,4 @@ hits.search = ddply(hits.search, c('Class', 'Keyword'), function(.hitsdf){
 hits.search = cbind(hits.search, dat[ hits.search$rowid, ])
 
 write.table(hits.search, file = "searchhits.csv", sep = ',', row.names = FALSE)
-
-
     
