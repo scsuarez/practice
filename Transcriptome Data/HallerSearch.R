@@ -27,4 +27,8 @@ hits.search = ddply(hits.search, c('Class', 'Keyword'), function(.hitsdf){
 hits.search = cbind(hits.search, dat[ hits.search$rowid, ])
 
 write.table(hits.search, file = "searchhits.csv", sep = ',', row.names = FALSE)
-    
+
+# for histograms in our desired style
+# ?histogram for explanation
+# require(lattice)
+# histogram( ~ Keyword | Class, hits.search, scales=list(x=list(rot=45), y=list(relation="free"), alternating=F), layout=c(1,3), type="count")
